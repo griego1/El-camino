@@ -1,0 +1,43 @@
+body {
+    background-color: lightsalmon;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(209, 77, 77);
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 0, 0)
+  }
+p {
+    font-size: 30px;
+  }
+  .formatText {
+    color: rgb(96, 65, 65);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    white-space: pre-line;
+  }
+  /* Style the video container */
+.video-container {
+  text-align: center; /* Center the video on the page */
+  margin-bottom: 20px; /* Add some space below the video */
+}
+
+iframe {
+  width: 100%; /* Make the iframe responsive */
+  max-width: 560px; /* Set a maximum width */
+  height: 315px; /* Set the height */
+  border: none; /* Remove border */
+}
+#viaLink {
+  color: blue; /* You can use any color */
+  text-decoration: none; /* Removes the underline */
+}
+
+#viaLink:hover {
+  text-decoration: underline; /* Underline on hover to indicate interactivity */
+  color: darkblue; /* Change color on hover */
+}
