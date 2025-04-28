@@ -15,7 +15,8 @@ const viaDeLaPlataCoords = [
   [38.8786, -6.9703],  // Mérida
   [39.4699, -6.3725],  // Cáceres
   [40.9613, -5.6669],  // Salamanca
-  [41.6520, -4.7286],  // Valladolid
+  [41.5035, -5.7468],  // Zamora
+  [42.3358, -7.8639],  // Ourense
   [42.8782, -8.5448]   // Santiago de Compostela
 ];
 
