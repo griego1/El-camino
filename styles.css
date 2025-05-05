@@ -41,3 +41,18 @@ iframe {
   text-decoration: underline; /* Underline on hover to indicate interactivity */
   color: darkblue; /* Change color on hover */
 }
+/* styles.css */
+
+/* Make sure the map has a height and width */
+#map {
+  height: 400px; /* Set the height of the map */
+  width: 100%;   /* Optional: Make the map take up full width of its container */
+}
+
+#mapTitle {
+  text-decoration: underline;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* You can add other styles here for the page, like body, headers, etc. */

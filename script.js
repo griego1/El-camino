@@ -1,14 +1,10 @@
 function showMap() {
-  const mapDiv = document.getElementById('map'); // Get the map container
-
-  // Check if the map is hidden (display: none)
-  if (mapDiv.style.display === 'none') {
-    mapDiv.style.display = 'block'; // Show the map
-const map = L.map('map').setView([40.0, -4.0], 10); // Centered over Spain
-
+const map = L.map('map').setView([40.0, -4.0], 6);
+// Add OpenStreetMap tile layer to the map
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
+
 const viaDeLaPlataCoords = [
   [37.3886, -5.9823],  // Seville
   [38.2670, -6.7662],  // Zafra
@@ -91,7 +87,6 @@ religiousSites.forEach(site => {
   `;
   L.marker(site.coords).addTo(map).bindPopup(popupContent);
 });
-}
 }
 // Add event listener to show the map when "Vía de la Plata" link is clicked
 document.getElementById('viaLink').addEventListener('click', function (e) {
