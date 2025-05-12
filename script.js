@@ -1,6 +1,6 @@
-function showMap() {
-const map = L.map('map').setView([40.0, -4.0], 6);
-// Add OpenStreetMap tile layer to the map
+function showMap() {}
+  const mapDiv = document.getElementById('map'); // Get the map container
+const map = L.map('map').setView([40.0, -4.0], 10); // Centered over Spain
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
@@ -15,7 +15,6 @@ const viaDeLaPlataCoords = [
   [42.3358, -7.8639],  // Ourense
   [42.8782, -8.5448]   // Santiago de Compostela
 ];
-
 const viaRoute = L.polyline(viaDeLaPlataCoords, {
   color: 'red',
   weight: 4,
@@ -87,7 +86,6 @@ religiousSites.forEach(site => {
   `;
   L.marker(site.coords).addTo(map).bindPopup(popupContent);
 });
-}
 // Add event listener to show the map when "Vía de la Plata" link is clicked
 document.getElementById('viaLink').addEventListener('click', function (e) {
 e.preventDefault(); // Prevent default behavior of the link
